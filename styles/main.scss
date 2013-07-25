@@ -1,0 +1,117 @@
+$title-blue: #0ac5f4;
+$white: #fff;
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F9F9F9;
+}
+
+nav { 
+	padding: 3rem 0;
+
+	.logo {
+		float: left;
+		text-indent: -9999px;
+		background: url('../img/R.png') no-repeat;
+		width: 42px;
+		height: 60px;
+		display: block;
+	}
+
+	a {
+		color: $white;
+		font-family: "lato";
+		padding: 10px 20px;
+		text-decoration: none;
+		float: right;
+		width: 113px;
+		background-color: $title-blue;
+		border-radius: 3px;
+		text-align: center;
+		position: relative;
+		margin: 0;
+		&:hover{
+			background-color: #5ccfec;
+		}
+	}
+}
+
+
+.name {
+	max-width: 960px;
+	// margin: 100px auto 0 auto;
+	margin: auto;
+	margin-top: 100px;
+
+	h1 {
+		color: $title-blue;
+		text-transform: uppercase;
+		text-align: center;
+		font: 100 72px/72px "lato";
+		margin: 30px auto;
+	}
+	p {
+		color: #232323;
+		font: 400 16px/24px "gentium book basic";
+		text-align: center;
+	}
+}
+
+
+.connect {
+	max-width: 250px;
+	margin: auto;
+	margin-top: 150px;
+	a {
+		margin:20px;
+	}
+
+}
+
+
+#footer {
+	font-family: "lato";
+	padding: 2rem 0;
+	border-top: 1px solid #f0f0f0;
+	font-size: 14px;
+	color: #888888;
+	bottom: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	.copyright {
+		float: left;
+	}
+	.phone {
+		float: right;
+		margin-left: 3rem;
+	}
+	.address {
+		float: right;
+	}
+	a {
+		text-decoration: none;
+		color: #888888;
+		&:hover {
+			color: $title-blue;	
+		}
+	}
+	
+	p > span {
+		font-weight: bold;
+		color: #232323;
+	}
+}
+
+
+.wrap {
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+
