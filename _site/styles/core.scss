@@ -1,0 +1,196 @@
+/********************* PARTIALS ****************************/
+/* ------------------------------------------------------- */
+@import "partials/_reset.sass";
+
+/******************** END PARTIALS *************************/
+/* ------------------------------------------------------- */
+
+/********************* VARIABLES ***************************/
+/* ------------------------------------------------------- */
+
+
+/******** Background Colors ********/
+$off-white: #f5f5f5;
+$gray: #e4e3e3;
+
+/********** Main Palet ************/
+$blue: #58b7f0;
+$dark-blue: #292b36;
+
+/*********** Link Colors **********/
+$light-green: #0aba60;
+
+/*********** Text Colors **********/
+$light-gray: #9a9a9a;
+$white: #fff;
+$dark-gray: #333333;
+
+
+/******************* END VARIABLES *************************/
+/* ------------------------------------------------------- */
+
+/*********************** MIXINS ****************************/
+/* ------------------------------------------------------- */
+@mixin rounded-corners($radius: 5px) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-o-border-radius: $radius;
+}
+
+
+/************** Fonts *************/
+
+@mixin freight-light {
+	font-family: "freight-sans-pro", "Helvetica Neue" sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+@mixin freight-medium {
+	font-family: "freight-sans-pro", "Helvetica Neue" sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin freight-bold {
+	font-family: "freight-sans-pro", "Helvetica Neue" sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+@mixin minion-pro {
+	font-family: "minion-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+
+/********************* END MIXINS **************************/
+/* ------------------------------------------------------- */
+
+/********************* HTML Tags **************************/
+/* ------------------------------------------------------- */
+body {
+	background: $off-white;
+	border-top: 5px solid $blue;
+	font-size: 100%;
+	@include minion-pro;
+}
+
+h1 {
+	@include freight-medium;
+}
+
+h2, h3 {
+	@include freight-light;
+	color: $dark-blue;
+}
+
+p {
+	color: $light-gray;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+	@include freight-light;
+	&:hover {
+		border-bottom: 1px solid $blue;
+	}
+	&:visited {
+		color: $blue;
+		text-decoration: none;
+	}
+}
+/********************* End HTML Tags ************************/
+/* -------------------------------------------------------- */
+
+.blue-button {
+	background: $dark-blue;
+	border: $dark-blue;
+	background-image: linear-gradient(bottom, rgb(41,43,54) 50%, rgb(72,76,96) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(41,43,54) 50%, rgb(72,76,96) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(41,43,54) 50%, rgb(72,76,96) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(41,43,54) 50%, rgb(72,76,96) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(41,43,54) 50%, rgb(72,76,96) 100%);
+	padding: 0.75em 0;
+	@include rounded-corners;
+	float: none;
+	margin: auto;
+}
+
+
+
+
+
+/************************ HEADER ***************************/
+/* ------------------------------------------------------- */
+.navigation {
+	margin-top: 18px;
+	border-bottom: 1px solid $gray;
+	nav {
+		margin-bottom: 18px;
+		h1 {
+			display: none;
+		}
+		img {
+			height: 50px;
+			width: 50px;
+		}
+	}
+}
+
+.nav-list {
+	float: right;
+	position: relative;
+	margin-top: 15px;
+	li {
+		float: left;
+		margin-right: 30px;
+	}
+}
+
+/********************** END HEADER *************************/
+/* ------------------------------------------------------- */
+
+/************************ INDEX ***************************/
+/* ------------------------------------------------------- */
+
+.banner {
+	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/blue-bg.png") no-repeat center center fixed;
+	height: 300px;
+	// padding: 0;
+	.title {
+		text-align: center;
+		margin: auto;
+		float: none;
+		h1, h2 {
+			color: $white;
+			text-transform: uppercase;
+			@include freight-medium;
+		}
+		h1 {
+			font-size: 2.6875em;
+			// margin-top: 0.31666666666em;
+		}
+		h2 {
+			letter-spacing: 0.0625em;
+			// margin-bottom: 10px;
+		}
+		a {
+			color: $white;
+			// font-size: 1.25em;
+			@include freight-light;
+		}
+	}
+}
+
+
+/********************** END INDEX **************************/
+/* ------------------------------------------------------- */

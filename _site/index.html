@@ -1,65 +1,75 @@
----
-permalink: /index.html
----
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Ivan Rodriguez | Software Developer and Designer</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<link rel="icon" type="image/ico" href="img/favicon.ico">
 
-<!DOCTYPE html>
+	<!--** Note: Setting viewport to 1 does not allow the user to pinch and zoom.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
- <html>
- 	<head>
- 		<title>Ivan Rodriguez</title>
- 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- 		<meta name="description" content="Hello, I'm Ivan. I'm a front-end developer and designer focused on creating beautiful interfaces for web and mobile. My preferred tools are Ruby on Rails, JavaScript, SASS, LESS, and  MySQL. Drop me a line for information or if there's a project you'd like to work on together." />
+	<!--[if lt IE 9]>
+	  <script src="js/html5.js"></script>
+	<![endif]-->
 
- 		<script type="text/javascript" src="js/main.js"></script>
+	<!--[if (gt IE 8) | (IEMobile)]><!-->
+	  <link rel="stylesheet" href="styles/unsemantic/unsemantic-grid-responsive.css" />
+	<!--<![endif]-->
 
- 		<link rel="stylesheet" href="styles/main.css" type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400' rel='stylesheet' type='text/css'>
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	  <link rel="stylesheet" href="styles/unsemantic/ie.css" />
+	<![endif]-->
 
-
- 	</head>
- 	<body>
-		<nav class="wrap">
-			<div class="logo" href="#"></div>
-			<a href="mailto:ivan.rodriguez001@gmail.com">Contact</a>
-		</nav>
-
- 		<section class="name">
- 			<h1>Ivan Rodriguez</h1>
- 			<section class="intro">
- 				<p>Hello, I'm Ivan. I'm a developer and designer focused on creating beautiful interfaces for web and mobile. My preferred tools are Ruby on Rails, JavaScript, SASS, LESS, and  MySQL. Drop me a line for information or if there's a project you'd like to work on together.</p>
- 			</section>
- 		</section>
-
- 		<section class="connect">
- 			<a href="https://twitter.com/ivanrodriguez08" class="twitter"><img src="img/logos/twitter.png" alt=""></a>
- 			<a href="http://dribbble.com/ivanrodriguez08" class="dribbble"><img src="img/logos/dribbble.png" alt=""></a>
- 			<a href="http://www.rdio.com/people/ivanrodriguez5/" class="rdio"><img src="img/logos/rdio.png" alt=""></a>
-
- 		</section>
+	<!-- Typekit -->
+	<script type="text/javascript" src="//use.typekit.net/aoz5lnm.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 
-	 	<footer id="footer" class="clear">
-			<div class="wrap">
-				<p class="copyright">Copyright © 2013 - Ivan Rodriguez</p>
-				<p class="address"><a href="mailto:ivan.rodriguez001@gmail.com">ivan.rodriguez001@gmail.com</a></p>
-			</div>
-		</footer>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="styles/core.min.css">
+</head>
+<body>
+	<div class="grid-container">
+		<div class="navigation grid-100 mobile-grid-100">
+			<nav>
+				<h1>Ivan Rodriguez</h1>
+				<a href="index.html"><img src="https://s3.amazonaws.com/ivanrodriguez.co/img/logo%402x.png" alt="Ivan Rodriguez"></a>
+				<ul class="nav-list">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="content grid-100 mobile-grid-100">
+			<section class="banner">
+				<div class="title grid-50 mobile-grid-50">
+					<h1>Ivan Rodriguez</h1>
+					<h2>Front-End Developer & Web Designer</h2>
+					<div class="blue-button grid-25 mobile-grid-50">
+						<a href="#">View My Work</a>
+					</div>
+				</div>
 
-		<script type="text/javascript">
+			</section>
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-30953968-1']);
-		  _gaq.push(['_setDomainName', 'ivanrodriguez.co']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
-
- 	</body>
- </html>
+<!-- 			<section class="three-column">
+				<div class="specialty">
+					<h3>Front-End Development</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+				<div class="specialty">
+					<h3>Product Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+				<div class="specialty">
+					<h3>Mobile Development</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+			</section> -->
+		</div>
+	</div>
+</body>
+</html>
