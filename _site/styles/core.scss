@@ -66,7 +66,6 @@ $dark-gray-text: #333333;
 }
 
 
-
 /********************* END MIXINS **************************/
 /* ------------------------------------------------------- */
 
@@ -86,6 +85,8 @@ h1 {
 h2, h3 {
 	@include freight-light;
 	color: $dark-blue;
+	font-size: 1.4375em;
+	text-align: center;
 }
 
 p {
@@ -108,6 +109,13 @@ a {
 		text-decoration: none;
 	}
 }
+
+hr {
+	width: 100%;
+	border-bottom: 1px solid $white;
+	margin: 1em auto;
+	padding-top: 1em;
+}
 /********************* End HTML Tags ************************/
 /* -------------------------------------------------------- */
 
@@ -123,6 +131,13 @@ a {
 	@include rounded-corners;
 	float: none;
 	margin: auto;
+	&:hover {
+		background-image: linear-gradient(bottom, rgb(72,76,96) 10%, rgb(41,43,54) 100%);
+		background-image: -o-linear-gradient(bottom, rgb(72,76,96) 10%, rgb(41,43,54) 100%);
+		background-image: -moz-linear-gradient(bottom, rgb(72,76,96) 10%, rgb(41,43,54) 100%);
+		background-image: -webkit-linear-gradient(bottom, rgb(72,76,96) 10%, rgb(41,43,54) 100%);
+		background-image: -ms-linear-gradient(bottom, rgb(72,76,96) 10%, rgb(41,43,54) 100%);
+	}
 }
 
 
@@ -182,6 +197,7 @@ a {
 			font-size: 2.6875em;
 		}
 		h2 {
+			font-size: 1em;
 			letter-spacing: 0.0625em;
 			margin-bottom: 1em;
 		}
@@ -201,18 +217,32 @@ a {
 /********************** END INDEX **************************/
 /* ------------------------------------------------------- */
 
+/********************* THREE COLUMN ************************/
+/* ------------------------------------------------------- */
+
+
 .three-column {
 	margin: 18px auto;
 	float: none;
 	text-align: center;
 	.specialty {
-		margin-top: 10px;
+		margin: 2em 1.25em 2em 0;
+		// margin-top: 10px;
 		img {
 			// width: 296px;
 			// height: 150px;
 		}
-
 	}
+	.last {
+		margin-right: 0;
+	}
+}
+
+#frontend, #product, #mobile {
+	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/specialties.png") no-repeat center;
+	width: 150px;
+	height: 150px;
+	margin: auto;
 }
 
 #frontend {
@@ -220,20 +250,154 @@ a {
 }
 
 #product {
-	background-position: 150px 0;
+	background-position: -150px 0;
 }
 
 #mobile {
-	background-position: 272px 0;
+	background-position: -300px 0;
 }
 
 
+/******************* END THREE COLUMN **********************/
+/* ------------------------------------------------------- */
 
+/********************* SELECTED WORK ***********************/
+/* ------------------------------------------------------- */
 .dark-grey {
 	background: $gray-background;
 }
 
+.stack {
+	h3, p {
+		color: white;
+		visibility: hidden;
+	}
+	h3 {
+		@include freight-medium;
+		font-size: 1.4375em;
+	}
+	p {
+		font-size: 1em;
+	}
+	&:hover {
+		position: relative;
+		z-index: 3;
+		background: rgba(0,0,0, 0.85);
+		h3,p {
+			visibility: visible;
+		}
+	}
+}
 
+.selectwork {
+	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/dusquare.png") no-repeat;
+	width: 260px;
+	height: 260px;
+	float: none;
+	margin: auto;
+	border: 1px solid $dark-gray-text;
+}
+
+// .leftarrow, .rightarrow {
+// 	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/arrows-sprite.png") no-repeat;
+// 	width: 28px;
+// 	height: 38px;
+// 	display: inline-block;
+// 	&:hover {
+// 		cursor: pointer;
+// 	}
+// }
+
+// .leftarrow {
+// 	background-position: 0 -38px;
+// 	&:hover {
+// 		background-position: 0 0px;
+// 	}
+// }
+
+// .rightarrow {
+// 	background-position: -28px -38px;
+// 	&:hover {
+// 		background-position: -28px 0;
+// 	}
+// }
+
+// .deltau {
+// 	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/deltau.png") no-repeat center;
+// 	display: inline-block;
+// 	width: 88%;
+// 	height: 300px;
+// }
+
+
+/******************* END SELECTED WORK *********************/
+/* ------------------------------------------------------- */
+
+
+/************************* FOOTER **************************/
+/* ------------------------------------------------------- */
 .footer {
 	background: $dark-blue;
+	color: $white;
 }
+
+.full-width {
+	float: none;
+	margin: 1em auto 0;
+	padding-bottom: 1em;
+}
+
+.social {
+	margin: auto 1.25em;
+	a {
+		color: $white;
+		&:hover {
+			border-bottom: 1px solid $white;
+		}
+	}
+}
+
+#github, #twitter, #dribbble, #linkedin {
+	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/social.png") no-repeat;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	float: left;
+	margin-right: 0.625em;
+	margin-left: 0.625em;
+}
+
+#github {
+	background-position: 0 0;
+}
+
+#twitter {
+	background-position: -20px 0;
+}
+
+#dribbble {
+	background-position: -40px 0;
+}
+
+#linkedin {
+	background-position: -60px 0;
+}
+
+.copyright {
+	float: none;
+	margin: auto;
+	text-align: center;
+	font-size: 0.75em;
+	color: $white;
+	@include freight-light;
+	a {
+		color: $light-green;
+		&:hover {
+			border-bottom: 1px solid $light-green;
+		}
+	}
+}
+
+/********************** END FOOTER *************************/
+/* ------------------------------------------------------- */
+
