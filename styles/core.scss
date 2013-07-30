@@ -25,6 +25,10 @@ $light-gray-text: #9a9a9a;
 $white: #fff;
 $dark-gray-text: #333333;
 
+/*********** Chart Colors *********/
+$chartBlue: #346f8f;
+$chartGreen: #74db95;
+$chartOrange: #c7511a;
 
 /******************* END VARIABLES *************************/
 /* ------------------------------------------------------- */
@@ -89,6 +93,12 @@ h2, h3 {
 	text-align: center;
 }
 
+h4 {
+	@include freight-medium;
+	color: $dark-blue;
+	margin-bottom: 1em;
+}
+
 p {
 	color: $light-gray-text;
 }
@@ -141,17 +151,12 @@ hr {
 }
 
 
-
-
-
 /************************ HEADER ***************************/
 /* ------------------------------------------------------- */
 .navigation {
 	margin-top: 18px;
-	// margin: 18px auto 0 auto;
 	border-bottom: 1px solid $gray-background;
 	nav {
-		// margin-bottom: 18px;
 		margin: 0 auto 18px auto;
 		float: none;
 		h1 {
@@ -225,13 +230,8 @@ hr {
 	margin: 18px auto;
 	float: none;
 	text-align: center;
-	.specialty {
+	.single-column {
 		margin: 2em 1.25em 2em 0;
-		// margin-top: 10px;
-		img {
-			// width: 296px;
-			// height: 150px;
-		}
 	}
 	.last {
 		margin-right: 0;
@@ -265,6 +265,9 @@ hr {
 /* ------------------------------------------------------- */
 .dark-grey {
 	background: $gray-background;
+	h2 {
+		margin-top: 1em;
+	}
 }
 
 .stack {
@@ -298,41 +301,96 @@ hr {
 	border: 1px solid $dark-gray-text;
 }
 
-// .leftarrow, .rightarrow {
-// 	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/arrows-sprite.png") no-repeat;
-// 	width: 28px;
-// 	height: 38px;
-// 	display: inline-block;
-// 	&:hover {
-// 		cursor: pointer;
-// 	}
-// }
-
-// .leftarrow {
-// 	background-position: 0 -38px;
-// 	&:hover {
-// 		background-position: 0 0px;
-// 	}
-// }
-
-// .rightarrow {
-// 	background-position: -28px -38px;
-// 	&:hover {
-// 		background-position: -28px 0;
-// 	}
-// }
-
-// .deltau {
-// 	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/deltau.png") no-repeat center;
-// 	display: inline-block;
-// 	width: 88%;
-// 	height: 300px;
-// }
-
 
 /******************* END SELECTED WORK *********************/
 /* ------------------------------------------------------- */
 
+/************************* ABOUT ***************************/
+/* ------------------------------------------------------- */
+
+#portrait {
+	width: 200px;
+	height:200px;
+	float: none;
+	margin: auto;
+	padding-top: 2em;
+}
+.bio {
+	text-align: left;
+	p {
+		margin-bottom: 1em;
+	}
+	h3 {
+		text-align: left;
+	}
+ }
+ #second {
+ 	margin-top: 1.9375em;
+ }
+
+ .resource {
+ 	margin-bottom: 1em;
+ 	margin-top: 0.5em;
+ 	a, p {
+		text-align: left;
+ 	}
+ 	a {
+ 		border-bottom: 1px solid $dark-blue;
+ 		color: $dark-blue;
+ 		&:hover {
+			border-bottom: none;
+			color: $blue;
+ 		}
+ 	}
+ }
+
+ .skill {
+ 	float: none;
+ 	margin: .5em auto;
+ 	span {
+ 		float: left;
+ 		margin-right: .5em;
+ 	}
+ 	p {
+ 		@include freight-light;
+ 		font-size: 1em;
+ 		text-align: left;
+ 		float: left;
+ 		margin-right: 1em;
+ 	}
+ }
+
+.programmingskills {
+	width: 200px;
+	height: 3em;
+	margin-bottom: 1em;
+}
+
+#js, #python, #ruby, #php {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	@include rounded-corners(3px);
+}
+
+#js {
+	background-color: $blue;
+}
+
+#python {
+	background-color: $chartBlue;
+}
+
+#ruby {
+	background-color: $chartGreen;
+}
+
+#php {
+	background-color: $chartOrange;
+}
+
+/*********************** END ABOUT *************************/
+/* ------------------------------------------------------- */
 
 /************************* FOOTER **************************/
 /* ------------------------------------------------------- */
