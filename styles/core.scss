@@ -356,7 +356,7 @@ hr {
  		font-size: 1em;
  		text-align: left;
  		float: left;
- 		margin-right: 1em;
+ 		width: 70px;
  	}
  }
 
@@ -390,6 +390,40 @@ hr {
 }
 
 /*********************** END ABOUT *************************/
+/* ------------------------------------------------------- */
+
+/************************** WORK ***************************/
+/* ------------------------------------------------------- */
+.projdescription {
+	text-align: left;
+	h3 {
+		text-align: left;
+
+	}
+	ul {
+		@include minion-pro;
+		color: $light-gray-text;
+	}
+	.topspace {
+		margin-top: 1em;
+	}
+}
+
+.sample {
+	margin-top: 2em;
+}
+
+@media screen and (max-width: 400px) {
+	.sample {
+		img {
+			width: 350px;
+			height: 200px;
+		}
+	}
+}
+
+
+/*********************** END WORK **************************/
 /* ------------------------------------------------------- */
 
 /************************* FOOTER **************************/
