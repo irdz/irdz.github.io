@@ -21,7 +21,7 @@ var programmingData = [
 		value: 20,
 		color: chartOrange
 	}
-]
+];
 
 var designData = {
 	labels: ["Balsamiq", "Photoshop", "Illustrator", "Omnigraffle"],
@@ -32,7 +32,7 @@ var designData = {
 			data: [2.5,5,4,3]
 		}
 	]
-}
+};
 
 var librariesData = {
 	labels: ["D3.js", "Rails", "Backbone.js", "jQuery"],
@@ -43,21 +43,21 @@ var librariesData = {
 			data: [2.5,5,4,3]
 		}
 	]
-}
+};
 
 var programmingOptions = {
 	segmentStrokeColor: "#e4e3e3"
-}
+};
 
 var designOptions = {
 	barValueSpacing : 7,
 	scaleFontSize : 10
-}
+};
 
 var librariesOptions = {
 	barValueSpacing : 7,
 	scaleFontSize : 10
-}
+};
 
 window.onload = function() {
 
@@ -70,6 +70,12 @@ window.onload = function() {
 
 	var ctx3 = document.getElementById("libraries").getContext("2d");
 	var librariesChart = new Chart(ctx3).Bar(librariesData, librariesOptions);
+
+
+	currentPage = window.location.href;
+
+
+
 
 };
 

@@ -285,7 +285,6 @@ hr {
 }
 
 .stack {
-
 	h3, p {
 		color: white;
 		visibility: hidden;
@@ -305,6 +304,11 @@ hr {
 			visibility: visible;
 		}
 	}
+}
+
+.overlay {
+	width: 260px;
+	height: 260px;
 }
 
 .selectwork {
