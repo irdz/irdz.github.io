@@ -189,7 +189,7 @@ hr {
 /* ------------------------------------------------------- */
 
 .banner {
-	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/blue-bg.png") no-repeat center;
+	background: url("http://d8ci28d4asocv.cloudfront.net/img/blue-bg.png") no-repeat center;
 	height: 300px;
 	.title {
 		text-align: center;
@@ -253,7 +253,7 @@ hr {
 }
 
 #frontend, #product, #mobile {
-	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/specialties.png") no-repeat center;
+	background: url("http://d8ci28d4asocv.cloudfront.net/img/specialties.png") no-repeat center;
 	width: 150px;
 	height: 150px;
 	margin: auto;
@@ -284,57 +284,25 @@ hr {
 	}
 }
 
-.stack {
-	h3, p {
-		color: white;
-		visibility: hidden;
-	}
-	h3 {
-		@include freight-medium;
-		font-size: 1.4375em;
-	}
-	p {
-		font-size: 1em;
-	}
-	&:hover {
-		position: relative;
-		z-index: 3;
-		background: rgba(0,0,0, 0.85);
-		h3,p {
-			visibility: visible;
-		}
-	}
-}
-
-.overlay {
-	width: 260px;
-	height: 260px;
-}
 
 .selectwork {
-	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/dusquare.png") no-repeat;
 	width: 260px;
 	height: 260px;
 	float: none;
 	margin: auto;
 	border: 1px solid $dark-gray-text;
-	// &:before {
-	// 	z-index: 1;
-	// 	content: '';
-	// 	display: block;
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	background-color: rgba(0,0,0,0.5);
-	// 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
-	// 	-webkit-transition: 0.1s background linear;
-	// 	-moz-transition: 0.1s background linear;
-	// 	-ms-transition: 0.1s background linear;
-	// 	-o-transition: 0.1s background linear;
-	// 	transition: 0.1s background linear;
-	// }
+}
+
+#du {
+	background: url("http://d8ci28d4asocv.cloudfront.net/img/dusquare.png") no-repeat;
+}
+
+#as {
+	background: url("http://d8ci28d4asocv.cloudfront.net/img/adrenaline-tn.png") no-repeat;
+}
+
+#atgora {
+	background: url("http://d8ci28d4asocv.cloudfront.net/img/dusquare.png") no-repeat;
 }
 
 
@@ -502,7 +470,7 @@ hr {
 }
 
 #github, #twitter, #dribbble, #linkedin {
-	background: url("https://s3.amazonaws.com/ivanrodriguez.co/img/social.png") no-repeat;
+	background: url("http://d8ci28d4asocv.cloudfront.net/img/social.png") no-repeat;
 	height: 20px;
 	width: 20px;
 	display: inline-block;

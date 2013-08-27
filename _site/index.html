@@ -34,6 +34,20 @@
 	<!-- Chart.js -->
 	<script src="https://s3.amazonaws.com/ivanrodriguez.co/js/Chart.min.js" charset="utf-8"></script>
 
+	<!-- Turbo.js -->
+	<script>
+	  (function(t,u,r,b,o,s){
+	    o=document.createElement(u);
+	    o.setAttribute('data-turbojs', b);
+	    o.async=1;o.src=r;
+	    s=t.getElementsByTagName(u)[0];
+	    s.parentNode.insertBefore(o);
+	  })(document, 'script',
+	    '//d3csi3dqjpdyg3.cloudfront.net/v1/turbo.js',
+	    '//dzggdyqql7mmw.cloudfront.net/8a62b099ec14b7481fef.js');
+	</script>
+
+
 	<script src="js/main.js"></script>
 	<link rel="stylesheet" href="styles/core.min.css">
 
@@ -84,7 +98,7 @@ Ivan Rodriguez
 
 			</section>
 
-			<section class="three-column grid-90">
+			<section class="three-column grid-70">
 				<div class="single-column grid-30">
 					<!-- <div id="frontend"></div> -->
 					<h3>Front-End Development</h3>
@@ -104,32 +118,33 @@ Ivan Rodriguez
 
 			<section class="dark-grey grid-100 mobile-grid-100">
 				<h2>Select Work</h2>
-				<section class="three-column grid-80">
+				<section class="three-column grid-70">
 
 					<div class="single-column grid-30">
-						<a class="stack" href="#">
-							<div class="overlay">
-								<div class="selectwork">
-									<h3>Delta Upsilon</h3>
-									<p>PHP, SASS, jQUery</p>
-								</div>
-							</div>
+						<a href="work.html#deltau">
+							<div id="du" class="selectwork"></div>
 						</a>
+						<h3>Delta Upsilon</h3>
+						<p>PHP, SASS, jQUery</p>
 					</div>
 
 					<div class="single-column grid-30">
-						<div class="selectwork">
-							<h3>Delta Upsilon</h3>
-							<p>PHP, SASS, jQUery</p>
-						</div>
+						<a href="work.html#adrenaline">
+							<div id="as" class="selectwork"></div>
+						</a>
+						<h3>Adrenaline Slacklines</h3>
+						<p>Ruby on Rails, JavaScript, SASS</p>
 					</div>
 
 					<div class="single-column last grid-30">
-						<div class="selectwork">
-							<h3>Delta Upsilon</h3>
-							<p>PHP, SASS, jQUery</p>
-						</div>
+						<a href="work.html#atg">
+							<div id="atgora" class="selectwork"></div>
+						</a>
+						<h3>Atgora</h3>
+						<p>PHP, SASS, jQUery</p>
 					</div>
+
+
 				</section>
 			</section>
 
