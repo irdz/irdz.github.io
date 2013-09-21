@@ -422,9 +422,10 @@ hr {
 	font-size: 1.25em;
 	li {
 		width: 60%;
-		margin: auto;
+		margin: 1em auto;
 		span {
 			float: right;
+			color: $light-gray-text;
 		}
 		p {
 			font-size: 0.8em;
