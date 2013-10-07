@@ -82,16 +82,13 @@ document.ready = function() {
 
 	//--------- Underline Current Page in Nav -----------//
 
-
 	var pageTitle = document.title;
 	var verticalBar = pageTitle.indexOf("|");
 	if (verticalBar != -1) {
 		subTitle = pageTitle.substr(verticalBar + 2, pageTitle.length);
 	}
 
-
 	var nav = $(".nav-list").children();
-
 	for (var i = 0; i < nav.length; i++) {
 		var link = nav[i].firstChild;
 		if (link.innerHTML == subTitle) {
