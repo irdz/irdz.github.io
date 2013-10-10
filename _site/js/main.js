@@ -97,6 +97,11 @@ document.ready = function() {
 	};
 
 
+	//--------- Show Mobile Navigation -----------//
+	$(".mobile-nav").click(function() {
+		$(".nav-list").css("display", "block");
+		console.log("working");
+	});
 
 
 };
