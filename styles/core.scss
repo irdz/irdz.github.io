@@ -100,6 +100,12 @@ h4 {
 	color: $dark-blue;
 	margin-bottom: 1em;
 }
+h5 {
+	@include freight-medium;
+	color: $dark-blue;
+	font-size: 1.5em;
+}
+
 
 p {
 	color: $light-gray-text;
@@ -129,6 +135,13 @@ hr {
 	padding-top: 1em;
 	display: inline-block;
 }
+
+code {
+	width: 100%;
+	background-color: $dark-gray-text;
+	color: $white;
+}
+
 /********************* End HTML Tags ************************/
 /* -------------------------------------------------------- */
 
@@ -487,8 +500,19 @@ hr {
 	img {
 		max-width: 600px;
 		margin: auto;
+		border: 1px solid $light-gray-text;
 	}
 }
+
+.list {
+	color: $light-gray-text;
+	font-size: 1.3em;
+	li {
+		list-style-type: square;
+		margin-left: 1em;
+	}
+}
+
 /*********************** END BLOG **************************/
 /* ------------------------------------------------------- */
 

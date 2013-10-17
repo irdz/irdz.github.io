@@ -1,0 +1,64 @@
+---
+layout: blog-post
+
+title: Building My Personal Website
+subtitle: A quick breakdown on building my site on Jekyll.
+date: June 27, 2013
+
+---
+
+<h2>Building My Personal Website</h2>
+
+<p>This summer I decided to scrap my old portfolio and build a new one from scratch. When I first started I wanted to make sure I accomplished a few things:</p>
+
+<ul class="list">
+  <li>Increase Readability</li>
+  <li>Add blogging functionality</li>
+  <li>Make it responsive</li>
+  <!-- <li>Decrease download speeds</li> -->
+</ul>
+
+<p>I'll go through each of these challenges and also explain some things I learned along the way.</p>
+
+<h5>Readability</h5>
+<p>As can be seen below, my previouis site suffered from a readability problem since the paragraph text was too light and crowded.</p>
+
+<img src="https://s3.amazonaws.com/ivanrodriguez.co/img/blog/about-old.jpg" alt="Old Portfolio">
+
+<p>The helvetica neue was also not working for the paragaph text, so I decided to go with a serif font for paragraph text and a sans-serif font for headers. In this case I decided to go with Minion Pro as my serif font and Freight as my sans-serif font both of which were served through <a href="https://typekit.com/">Typekit.</a> Below is a screenshot of the update about page for comparison.</p>
+
+<img src="https://s3.amazonaws.com/ivanrodriguez.co/img/blog/aboult-new.jpg" alt="New Portfolio">
+
+<p></p>
+
+<h5>Blogging</h5>
+<p>It was important for me to include blogging functionality, but I wasn't excited about using a full blown blog platform such as Wordpress. <a href="http://jekyllrb.com/">Jekyll</a> provided just the right amount of customization and really gave me full control over the implementation. It also had the added benefit of being able to host on Github.</p>
+
+<p>I wanted to host my site on Github in order to avoid paying the $5.99 I currently pay to GoDaddy every month. Github's documentation is fairly simple, I would say almost too simple for someone to get started. It turns out you have to follow some pretty specific instructions that I'll go through here.</p>
+
+<p>Create a new repository that must follow the naming scheme “username/username.github.io” which for me would be “ivanrodriguez/ivanrodriguez5.github.io” which also serves as the link to the site.
+You must then install Jekyll on your computer with the ruby command:</p>
+
+<code>gem install jekyll</code>
+<p>In order to get Jekyll to watch directories for changes and have the CSS update run the command:</p>
+
+<code>jekyll serve -w</code>
+
+<p>Sometimes I'll get an error and it says that localhost:4000 is already in use. This is due to the fact that sometimes I either forget to kill the server when I shut down the terminal or I tried to start the server in an incorrect directory. To remedy this search for the PID with the command:</p>
+
+<code>lsof -i TCP:4000</code>
+
+<p>and kill the process with:</p>
+
+<code>kill -9 PID</code>
+
+<p>and that should solve the problem.</p>
+
+
+<h5>Responsive</h5>
+<p>I wanted my site to be responsive and adhere to a grid system. After some initial research on <a href="http://alistapart.com/article/fluidgrids">fluid grids</a> and <a href="http://adioso.com/blog/2013/06/responsifying-adioso/">responsive web app</a> design I decided to build my site on a 12-column responsive grid. I used <a href="http://unsemantic.com/">Unsemantic</a> which is a responsive implementation of the <a href="http://960.gs/">960 Grid System</a>.</p>
+
+<!-- <h5>Speed</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, rem, consequuntur odio amet optio nisi nostrum quisquam architecto voluptatibus deleniti consequatur sint eum provident voluptate doloremque numquam praesentium laborum maiores!</p> -->
+
+

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Ivan Rodriguez | Building My Personal Website</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="author" content="Ivan Rodriguez" />
+	<meta name="description" content="My name is Ivan and I am a software developer and designer based in San Francisco." />
+	<meta name="keywords" content="ivan, rodriguez, berkeley, cs, computer science, ruby, python, javascript" />
+	<link rel="icon" type="image/ico" href="/img/favicon.ico">
+
+	<!--** Note: Setting viewport to 1 does not allow the user to pinch and zoom.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+	<!--[if lt IE 9]>
+	  <script src="/js/html5.js"></script>
+	<![endif]-->
+
+	<!--[if (gt IE 8) | (IEMobile)]><!-->
+	  <link rel="stylesheet" href="/styles/unsemantic/unsemantic-grid-responsive.css" />
+	<!--<![endif]-->
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	  <link rel="stylesheet" href="/styles/unsemantic/ie.css" />
+	<![endif]-->
+
+	<!-- Typekit -->
+	<script type="text/javascript" src="//use.typekit.net/aoz5lnm.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!-- jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<!-- Chart.js -->
+	<script src="http://d8ci28d4asocv.cloudfront.net/js/Chart.min.js" charset="utf-8"></script>
+
+
+	<script src="/js/main.js"></script>
+	<link rel="stylesheet" href="/styles/core.min.css">
+
+<!--
+Ivan Rodriguez
+
+||||||||||||||||||||||||||||||||||||||||
+||||||       ||||||            \||||||||
+||||||       ||||||      ___    \|||||||
+||||||       ||||||     |   )    \||||||
+||||||       ||||||     |___)    /||||||
+||||||       ||||||			        /|||||||
+||||||       ||||||            /||||||||
+||||||       ||||||     |\     \||||||||
+||||||       ||||||     ||\     \|||||||
+||||||       ||||||     |||\     \||||||
+||||||       ||||||     ||||\     \|||||
+||||||||||||||||||||||||||||||||||||||||
+
+-->
+
+</head>
+<body>
+	<div class="grid-container">
+		<div class="navigation grid-100 mobile-grid-100">
+			<nav class="grid-70">
+				<h1>Ivan Rodriguez</h1>
+				<a href="/index.html"><img src="http://d8ci28d4asocv.cloudfront.net/img/logo@2x.png" alt="Ivan Rodriguez"></a>
+				<div class="mobile-nav"></div>
+				<ul class="nav-list mobile-grid-100">
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/work.html">Work</a></li>
+					<li><a href="/blog.html">Blog</a></li>
+					<li><a href="mailto:ivan.rodriguez001@gmail.com">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+<section class="grid-50 mobile-grid-80 blog post">
+
+
+<h2>Building My Personal Website</h2>
+
+<p>This summer I decided to scrap my old portfolio and build a new one from scratch. When I first started I wanted to make sure I accomplished a few things:</p>
+
+<ul class="list">
+  <li>Increase Readability</li>
+  <li>Add blogging functionality</li>
+  <li>Make it responsive</li>
+  <!-- <li>Decrease download speeds</li> -->
+</ul>
+
+<p>I'll go through each of these challenges and also explain some things I learned along the way.</p>
+
+<h5>Readability</h5>
+<p>As can be seen below, my previouis site suffered from a readability problem since the paragraph text was too light and crowded.</p>
+
+<img src="https://s3.amazonaws.com/ivanrodriguez.co/img/blog/about-old.jpg" alt="Old Portfolio">
+
+<p>The helvetica neue was also not working for the paragaph text, so I decided to go with a serif font for paragraph text and a sans-serif font for headers. In this case I decided to go with Minion Pro as my serif font and Freight as my sans-serif font both of which were served through <a href="https://typekit.com/">Typekit.</a> Below is a screenshot of the update about page for comparison.</p>
+
+<img src="https://s3.amazonaws.com/ivanrodriguez.co/img/blog/aboult-new.jpg" alt="New Portfolio">
+
+<p></p>
+
+<h5>Blogging</h5>
+<p>It was important for me to include blogging functionality, but I wasn't excited about using a full blown blog platform such as Wordpress. <a href="http://jekyllrb.com/">Jekyll</a> provided just the right amount of customization and really gave me full control over the implementation. It also had the added benefit of being able to host on Github.</p>
+
+<p>I wanted to host my site on Github in order to avoid paying the $5.99 I currently pay to GoDaddy every month. Github's documentation is fairly simple, I would say almost too simple for someone to get started. It turns out you have to follow some pretty specific instructions that I'll go through here.</p>
+
+<p>Create a new repository that must follow the naming scheme “username/username.github.io” which for me would be “ivanrodriguez/ivanrodriguez5.github.io” which also serves as the link to the site.
+You must then install Jekyll on your computer with the ruby command:</p>
+
+<code>gem install jekyll</code>
+<p>In order to get Jekyll to watch directories for changes and have the CSS update run the command:</p>
+
+<code>jekyll serve -w</code>
+
+<p>Sometimes I'll get an error and it says that localhost:4000 is already in use. This is due to the fact that sometimes I either forget to kill the server when I shut down the terminal or I tried to start the server in an incorrect directory. To remedy this search for the PID with the command:</p>
+
+<code>lsof -i TCP:4000</code>
+
+<p>and kill the process with:</p>
+
+<code>kill -9 PID</code>
+
+<p>and that should solve the problem.</p>
+
+
+<h5>Responsive</h5>
+<p>I wanted my site to be responsive and adhere to a grid system. After some initial research on <a href="http://alistapart.com/article/fluidgrids">fluid grids</a> and <a href="http://adioso.com/blog/2013/06/responsifying-adioso/">responsive web app</a> design I decided to build my site on a 12-column responsive grid. I used <a href="http://unsemantic.com/">Unsemantic</a> which is a responsive implementation of the <a href="http://960.gs/">960 Grid System</a>.</p>
+
+<!-- <h5>Speed</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, rem, consequuntur odio amet optio nisi nostrum quisquam architecto voluptatibus deleniti consequatur sint eum provident voluptate doloremque numquam praesentium laborum maiores!</p> -->
+
+
+
+
+<section class="grid-100 mobile-grid-100 disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'ivanrodriguez'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+</section><!-- End .blog for post -->
+			<section class="footer grid-100 mobile-grid-100">
+				<div class="full-width grid-60">
+					<div class="social grid-20 mobile-grid-35">
+						<span id="github"></span>
+						<p><a target="_blank" href="https://github.com/ivanrodriguez5">Github</a></p>
+					</div>
+					<div class="social grid-20 mobile-grid-35">
+						<span id="twitter"></span>
+						<p><a target="_blank" href="https://twitter.com/ivanrodriguez08">Twitter</a></p>
+					</div>
+					<div class="social grid-20 mobile-grid-35">
+						<span id="dribbble"></span>
+						<p><a target="_blank" href="http://dribbble.com/ivanrodriguez08">Dribbble</a></p>
+					</div>
+					<div class="social grid-20 mobile-grid-35">
+						<span id="linkedin"></span>
+						<p><a target="_blank" href="http://www.linkedin.com/in/ivanrodriguez08">LinkedIn</a></p>
+					</div>
+
+					<hr>
+
+					<p class="copyright grid-60">Ivan Rodriguez © 2013. Powered by <a target="_blank" href="http://pages.github.com/">Github</a>, <a target="_blank" href="http://jekyllrb.com/">Jekyll</a>, <a target="_blank" href="https://typekit.com">TypeKit</a>, and <a target="_blank" href="http://aws.amazon.com/s3/">Amazon S3.</a></p>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-30953968-1']);
+	  _gaq.push(['_setDomainName', 'ivanrodriguez.co']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</body>
+</html>
+
