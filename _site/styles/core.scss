@@ -78,37 +78,13 @@ $chartOrange: #c7511a;
 /* ------------------------------------------------------- */
 body {
 	background: $off-white;
-	border-top: 5px solid $blue;
+	// border-top: 5px solid $blue;
 	font-size: 100%;
 	@include minion-pro;
 }
 
 h1 {
 	@include freight-medium;
-}
-
-h2, h3 {
-	@include freight-light;
-	font-family: "freight-sans-pro", "Helvetica Neue" sans-serif;
-	color: $dark-blue;
-	font-size: 1.4em;
-	text-align: center;
-}
-
-h4 {
-	@include freight-medium;
-	color: $dark-blue;
-	margin-bottom: 1em;
-}
-h5 {
-	@include freight-medium;
-	color: $dark-blue;
-	font-size: 1.5em;
-}
-
-
-p {
-	color: $light-gray-text;
 }
 
 ul {
@@ -128,20 +104,16 @@ a {
 	}
 }
 
-hr {
-	width: 100%;
-	border-bottom: 1px solid $white;
-	margin: 1em auto;
-	padding-top: 1em;
-	display: inline-block;
-}
-
-code {
-	width: 100%;
-	background-color: $dark-gray-text;
-	color: $white;
-}
 
 /********************* End HTML Tags ************************/
 /* -------------------------------------------------------- */
+
+/********************* BODY ********************************/
+/* ------------------------------------------------------- */
+.content {
+	max-width: 600px;
+	text-align: center;
+	margin: auto;
+}
+
 
