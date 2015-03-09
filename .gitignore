@@ -1,3 +1,7 @@
 .DS_Store
 node_modules
 Gemfile.lock
+styles/.sass-cache
+styles/*.map
+_site/styles/*.map
+.sass-cache
