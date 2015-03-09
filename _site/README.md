@@ -1,6 +1,6 @@
 # Personal Portfolio & Blog
 
-This it all of the data for my personal portfolio and blog. Feel to take a look around at the structure of it. If any aspect of the site is used attribution is required.
+This it all of the data for my personal portfolio and blog. Feel to take a look around at the structure of it. If any aspect of the site is used attribution is recommended.
 
 # License
 
