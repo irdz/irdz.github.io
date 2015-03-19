@@ -8,10 +8,8 @@
 /********************* VARIABLES ***************************/
 /* ------------------------------------------------------- */
 
-
 /******** Background Colors ********/
 $off-white: #f5f5f5;
-$gray-background: #e4e3e3;
 
 /********** Main Palet ************/
 $blue: #58b7f0;
@@ -21,14 +19,8 @@ $dark-blue: #292b36;
 $light-green: #0aba60;
 
 /*********** Text Colors **********/
-$light-gray-text: #9a9a9a;
-$white: #fff;
-$dark-gray-text: #333333; // Keep
+$dark-gray-text: #333333;
 
-/*********** Chart Colors *********/
-$chartBlue: #346f8f;
-$chartGreen: #74db95;
-$chartOrange: #c7511a;
 
 /******************* END VARIABLES *************************/
 /* ------------------------------------------------------- */
@@ -113,7 +105,7 @@ a {
 .content {
 	max-width: 600px;
 	text-align: center;
-	margin: auto;
+	margin: 50px auto;
 }
 
 
