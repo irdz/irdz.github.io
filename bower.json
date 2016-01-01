@@ -1,0 +1,30 @@
+{
+  "name": "ivanrodriguez5.github.io",
+  "version": "0.2.0",
+  "homepage": "http://ivanrodriguez.co",
+  "authors": [
+    "Ivan Rodriguez <ivan.rodriguez001@gmail.com>"
+  ],
+  "description": "Software engineering portfolio",
+  "main": [
+    "style/main.core.scss"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "ivan",
+    "software",
+    "engineer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "react": "~0.14.4"
+  }
+}
