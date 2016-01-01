@@ -15,6 +15,9 @@ $off-white: #f5f5f5;
 $blue: #58b7f0;
 $dark-blue: #292b36;
 
+// $purple: #533E82;
+$purple: #555DA0;
+
 /*********** Link Colors **********/
 $light-green: #0aba60;
 
@@ -58,12 +61,19 @@ $dark-gray-text: #333333;
 /* ------------------------------------------------------- */
 body {
 	background: $off-white;
-	// border-top: 5px solid $blue;
+	border-top: 5px solid $purple;
 	font-size: 100%;
 }
 
 h1 {
-	@include freight-medium;
+	font-size: 4em;
+	color: $purple;
+}
+
+
+h2 {
+	font-size: 1.5em;
+	font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
 }
 
 ul {
@@ -71,16 +81,20 @@ ul {
 }
 
 a {
-	color: $blue;
+	color: $purple;
 	text-decoration: none;
-	@include freight-light;
 	&:hover {
-		border-bottom: 1px solid $blue;
+		border-bottom: 1px solid $purple;
 	}
 	&:visited {
-		color: $blue;
+		color: $purple;
 		text-decoration: none;
 	}
+}
+
+p {
+	font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+	margin-bottom: 1.5em;
 }
 
 
@@ -94,8 +108,4 @@ a {
 	margin: 50px auto;
 }
 
-
-h1 {
-	font-size: 4em;
-}
 
