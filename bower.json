@@ -25,6 +25,7 @@
     "tests"
   ],
   "devDependencies": {
-    "react": "~0.14.4"
+    "react": "~0.14.4",
+    "d3": "~3.5.12"
   }
 }

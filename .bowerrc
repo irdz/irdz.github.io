@@ -1,6 +1,5 @@
 {
   "analytics": false,
   "color": true,
-  "directory": "src/libraries",
-
+  "directory": "src/libraries"
 }
