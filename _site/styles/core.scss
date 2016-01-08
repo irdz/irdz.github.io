@@ -50,18 +50,6 @@ $dark-gray-text: #333333;
 	font-weight: 400;
 }
 
-@mixin freight-bold {
-	font-family: "freight-sans-pro", "Helvetica Neue", sans-serif;
-	font-style: normal;
-	font-weight: 700;
-}
-
-@mixin minion-pro {
-	font-family: "minion-pro",sans-serif;
-	font-style: normal;
-	font-weight: 400;
-}
-
 
 /********************* END MIXINS **************************/
 /* ------------------------------------------------------- */
@@ -103,8 +91,7 @@ a {
 /********************* BODY ********************************/
 /* ------------------------------------------------------- */
 .content {
-	max-width: 600px;
-	text-align: center;
+	max-width: 640px;
 	margin: 50px auto;
 }
 
