@@ -4,6 +4,5 @@ Gemfile.lock
 styles/.sass-cache
 styles/*.map
 _site/styles/*.map
-<<<<<<< HEAD
 .sass-cache/
 styles/.sass-cache
