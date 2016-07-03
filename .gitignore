@@ -6,3 +6,4 @@ styles/*.map
 _site/styles/*.map
 .sass-cache/
 styles/.sass-cache
+src/libraries
