@@ -2,3 +2,5 @@ auto: true
 permalink: /posts/:year/:month/:day/:title.html
 markdown: kramdown
 highlighter: rouge
+
+theme: jekyll-theme-minimal
