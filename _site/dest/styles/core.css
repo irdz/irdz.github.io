@@ -187,38 +187,16 @@ svg {
 /********************* HTML Tags **************************/
 /* ------------------------------------------------------- */
 body {
-  background: #f5f5f5;
-  border-top: 5px solid #555DA0;
-  font-size: 100%; }
-
-h1 {
-  font-size: 4em;
-  color: #555DA0; }
-
-h2 {
-  font-size: 1.5em;
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif; }
-
-ul {
-  list-style-type: none; }
-
-a {
-  color: #555DA0;
-  text-decoration: none; }
-  a:hover {
-    border-bottom: 1px solid #555DA0; }
-  a:visited {
-    color: #555DA0;
-    text-decoration: none; }
-
-p {
-  font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
-  margin-bottom: 1.5em; }
+  background: white; }
 
 /********************* End HTML Tags ************************/
 /* -------------------------------------------------------- */
 /********************* BODY ********************************/
 /* ------------------------------------------------------- */
 .content {
-  max-width: 640px;
-  margin: 50px auto; }
+  margin: 10px; }
+
+.main-title {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, Tahoma, Geneva, sans-serif; }
+
+/*# sourceMappingURL=core.css.map */
