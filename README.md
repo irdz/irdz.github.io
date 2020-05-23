@@ -5,8 +5,8 @@ This it all of the data for my personal portfolio and blog. Feel to take a look 
 # To build
 
 ```
-$ npm install
-$ bower install
+$ bundle install
+$
 ```
 
 # License

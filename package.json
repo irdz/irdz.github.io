@@ -1,11 +1,10 @@
 {
-  "name": "Portfolio",
+  "name": "irdz",
   "description": "Portfolio website for my engineering work",
   "repository": "https://github.com/irdz/irdz.github.io",
   "license": "MIT",
   "version": "0.2.0",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-ruby-sass": ">=2.0.6"
-  }
+  },
+  "main": "index.js"
 }
