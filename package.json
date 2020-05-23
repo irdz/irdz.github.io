@@ -4,7 +4,9 @@
   "repository": "https://github.com/irdz/irdz.github.io",
   "license": "MIT",
   "version": "0.2.0",
-  "devDependencies": {
-  },
-  "main": "index.js"
+  "devDependencies": {},
+  "main": "index.js",
+  "dependencies": {
+    "uikit": "^3.4.6"
+  }
 }

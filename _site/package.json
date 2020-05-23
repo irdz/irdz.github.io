@@ -1,11 +1,12 @@
 {
-  "name": "Build",
+  "name": "irdz",
   "description": "Portfolio website for my engineering work",
-  "repository": "https://github.com/ivanrodriguez5/ivanrodriguez5.github.io",
+  "repository": "https://github.com/irdz/irdz.github.io",
   "license": "MIT",
   "version": "0.2.0",
-  "devDependencies": {
-    "gulp": "3.9.0",
-    "gulp-ruby-sass": "2.0.6"
+  "devDependencies": {},
+  "main": "index.js",
+  "dependencies": {
+    "uikit": "^3.4.6"
   }
 }
