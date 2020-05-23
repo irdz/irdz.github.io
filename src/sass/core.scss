@@ -60,42 +60,11 @@ $dark-gray-text: #333333;
 /********************* HTML Tags **************************/
 /* ------------------------------------------------------- */
 body {
-	background: $off-white;
-	border-top: 5px solid $purple;
-	font-size: 100%;
+	background: white;
+	// border-top: 5px solid $purple;
+	// font-size: 100%;
 }
 
-h1 {
-	font-size: 4em;
-	color: $purple;
-}
-
-
-h2 {
-	font-size: 1.5em;
-	font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
-}
-
-ul {
-	list-style-type: none;
-}
-
-a {
-	color: $purple;
-	text-decoration: none;
-	&:hover {
-		border-bottom: 1px solid $purple;
-	}
-	&:visited {
-		color: $purple;
-		text-decoration: none;
-	}
-}
-
-p {
-	font-family: "proxima-nova", "Helvetica Neue", Arial, sans-serif;
-	margin-bottom: 1.5em;
-}
 
 
 /********************* End HTML Tags ************************/
@@ -103,9 +72,12 @@ p {
 
 /********************* BODY ********************************/
 /* ------------------------------------------------------- */
+
 .content {
-	max-width: 640px;
-	margin: 50px auto;
+	margin: 10px;
 }
 
 
+.main-title {
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, Tahoma, Geneva, sans-serif;
+}
